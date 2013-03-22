@@ -23,7 +23,7 @@ function os2web_sections_ctools_plugin_api() {
  */
 function os2web_sections_node_info() {
   $items = array(
-    'sektionsside' => array(
+    'os2web_sections_page' => array(
       'name' => t('Sektionsside'),
       'base' => 'node_content',
       'description' => '',
