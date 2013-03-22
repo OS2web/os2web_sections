@@ -1,9 +1,9 @@
-name = OS2Web Sektionssider
+name = OS2Web Sections
 core = 7.x
-package = OS2Web - Struktur
+package = OS2Web - Frontend
 php = 5.2.4
 version = 7.x-1.10
-project = OS2Web
+project = os2web_sections
 dependencies[] = os2web_base
 dependencies[] = os2web_base_panels
 dependencies[] = ctools
