@@ -36,7 +36,7 @@ function os2web_sections_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'site_struktur',
+            'vocabulary' => 'os2web_base_tax_site_structure',
             'parent' => '0',
             'depth' => '',
           ),
@@ -115,7 +115,7 @@ function os2web_sections_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'kle',
+            'vocabulary' => 'os2web_taxonomies_tax_kle',
             'parent' => '0',
           ),
         ),
