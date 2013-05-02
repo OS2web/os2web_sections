@@ -13,7 +13,7 @@ function os2web_sections_default_page_manager_handlers() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'node_view_panel_context_3';
+  $handler->name = 'os2web_sections_section_front';
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -45,21 +45,12 @@ function os2web_sections_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'balk_node';
+  $display->layout = 'flexible';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
-      'left' => NULL,
-      'right_top' => NULL,
-      'right_middle' => NULL,
-      'right_bottom' => NULL,
-      'lead' => NULL,
-      'middle_top' => NULL,
-      'middle_center' => NULL,
-      'middle_right' => NULL,
       'center' => NULL,
-      'right_' => NULL,
     ),
   );
   $display->cache = array();
@@ -68,7 +59,7 @@ function os2web_sections_default_page_manager_handlers() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'lead';
+    $pane->panel = 'center';
     $pane->type = 'views';
     $pane->subtype = 'os2web_base_panels_view_rotating';
     $pane->shown = TRUE;
@@ -104,10 +95,10 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['lead'][0] = 'new-1';
+    $display->panels['center'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'lead';
+    $pane->panel = 'center';
     $pane->type = 'views';
     $pane->subtype = 'os2web_base_panels_view_selfserv';
     $pane->shown = TRUE;
@@ -143,10 +134,10 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['lead'][1] = 'new-2';
+    $display->panels['center'][1] = 'new-2';
     $pane = new stdClass();
     $pane->pid = 'new-3';
-    $pane->panel = 'middle_top';
+    $pane->panel = 'center';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_base_panels_view_newslist-panel_pane_3';
     $pane->shown = TRUE;
@@ -170,10 +161,10 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-3'] = $pane;
-    $display->panels['middle_top'][0] = 'new-3';
+    $display->panels['center'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'middle_top';
+    $pane->panel = 'center';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_spotbox_view_spots-panel_pane_9';
     $pane->shown = TRUE;
@@ -191,10 +182,10 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['middle_top'][1] = 'new-4';
+    $display->panels['center'][2] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'middle_top';
+    $pane->panel = 'center';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_spotbox_view_spots-panel_pane_8';
     $pane->shown = TRUE;
@@ -209,11 +200,11 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['middle_top'][2] = 'new-5';
+    $display->panels['center'][3] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['node_view_panel_context_3'] = $handler;
+  $export['os2web_sections_section_front'] = $handler;
 
   return $export;
 }
