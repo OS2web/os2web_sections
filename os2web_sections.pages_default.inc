@@ -182,7 +182,7 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['center'][2] = 'new-4';
+    $display->panels['center'][3] = 'new-4';
     $pane = new stdClass();
     $pane->pid = 'new-5';
     $pane->panel = 'center';
@@ -200,7 +200,7 @@ function os2web_sections_default_page_manager_handlers() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['center'][3] = 'new-5';
+    $display->panels['center'][4] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
