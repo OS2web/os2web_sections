@@ -26,8 +26,8 @@ projects[os2web_taxonomies][download][url] = "https://github.com/OS2web/os2web_t
 
 ; Basic
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+# projects[ctools][subdir] = "contrib"
+# projects[ctools][version] = "1.3"
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "2.0-beta2"
